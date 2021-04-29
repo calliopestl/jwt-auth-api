@@ -1,7 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require ('cors');
-const bodyParser = require ('body-parser');
 const dbConfig = require ('./database/db');
 
 
@@ -12,8 +11,8 @@ const api = require('./routes/auth.routes');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(dbConfig.db, {
-    userNewUrlParser: true,
-    userUnifiedTopology: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 }).then(() => {
     console.log('Database connected')
 }, 
@@ -33,7 +32,7 @@ app.use(express.json());
 app.use(express.urlencoded({
     extended: false
 }));
-app.use(cores());
+app.use(cors());
 
 // serve static resources
 
