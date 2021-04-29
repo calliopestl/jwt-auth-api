@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "jwt token based authentication api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calliopestl/jwt-auth-api.git"
+  },
+  "author": "Halley Moore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calliopestl/jwt-auth-api/issues"
+  },
+  "homepage": "https://github.com/calliopestl/jwt-auth-api#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.7",
+    "mongoose-unique-validator": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
